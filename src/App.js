@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// Components
+import Home from './components/Home';
+
 class App extends Component {
   render() {
     return (
@@ -8,6 +11,7 @@ class App extends Component {
         <h1>
           TEST
         </h1>
+        <Home />
       </div>
     );
   }
