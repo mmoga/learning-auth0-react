@@ -3,6 +3,7 @@ import './App.css';
 
 // Components
 import Home from './components/Home';
+import Profile from './components/Profile';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
           TEST
         </h1>
         <Home />
+        <Profile />
       </div>
     );
   }
