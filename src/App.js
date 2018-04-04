@@ -15,7 +15,7 @@ class App extends Component {
     this.auth = new Auth();
     this.state = {
       profile: {}
-    }
+    };
   }
 
   componentWillMount() {
@@ -86,6 +86,7 @@ class App extends Component {
           exact
           component={Profile}
           auth={this.auth}
+          {...this.state}
         />
         <Route
           path="/callback"
