@@ -12,9 +12,6 @@ class App extends Component {
     super();
     this.auth = new Auth();
   }
-  componentDidMount() {
-    this.auth.login();
-  }
   render() {
     return (
       <div>
@@ -24,6 +21,9 @@ class App extends Component {
           </li>
           <li>
             <Link to='/profile'>Profile</Link>
+          </li>
+          <li>
+            <button onClick={() => {this.auth.login()}}>Login</button>
           </li>
         </ul>
         <Route path='/' exact component={Home} />
